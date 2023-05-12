@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/img/logo.png" alt="alura" class="logo" />
+      </div>
+    </header>
+    <div class="container">
+      <div class="parrafo1">
+        <div class="prueba">
+          <textarea name="introducir" id="textoEncriptado" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+          <p class="alerta"><ion-icon name="alert-circle-outline"></ion-icon> Solo letras minusculas y sin acentos</p>
+          <div class="opciones">
+            <p id="btn-encriptar">Encriptar</p>
+            <p id="btn-desencriptar">Desencriptar</p>
+          </div>
+        </div>
+      </div>
+      <div class="parrafo2">
+        <div class="prueba">
+          <div class="pruebados">
+            <textarea name="" id="textoDesencriptado" cols="30" rows="16" ></textarea > 
+            <div class="btnCopiar">
+                <p id="botonCopiar">Copiar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+  </body>
+    
+</html>
+

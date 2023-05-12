@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f5fc;
+}
+
+header {
+  background-color: #f3f5fc;
+  height: 12vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+header .logo {
+  margin-left: 5%;
+  width: 20px;
+}
+
+.container {
+  background-color: #f3f5fc;
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+  padding: 20px;
+}
+.container .parrafo1 {
+  background: #f3f5fc;
+  width: 50%;
+}
+.container .parrafo1 .prueba {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+.container .parrafo1 .prueba #textoEncriptado {
+  height: 80%;
+  width: 80%;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #f3f5fc;
+  font-size: 18px;
+  border-radius: 15px;
+  color: #1c3972;
+  padding: 10px;
+  resize: none;
+}
+.container .parrafo1 .prueba #textoEncriptado::-moz-placeholder {
+  color: #1c3972;
+}
+.container .parrafo1 .prueba #textoEncriptado::placeholder {
+  color: #1c3972;
+}
+.container .parrafo1 .prueba #textoEncriptado:focus {
+  border: 1px solid #1c3972;
+  outline: none;
+}
+.container .parrafo1 .prueba .alerta {
+  justify-content: start;
+  display: flex;
+  font-size: 11px;
+  height: 20px;
+  width: 80%;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  align-items: center;
+}
+.container .parrafo1 .prueba .opciones {
+  background: #f3f5fc;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+  justify-content: center;
+  cursor: pointer;
+}
+.container .parrafo1 .prueba .opciones p {
+  border: 1px solid #1c3972;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: #f3f5fc;
+  letter-spacing: 1px;
+  min-width: 20%;
+  text-align: center;
+  color: #1c3972;
+}
+.container .parrafo1 .prueba .opciones #btn-encriptar {
+  background: #1c3972;
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;
+  min-width: 20%;
+}
+.container .parrafo2 {
+  background: #f3f5fc;
+  width: 50%;
+  position: relative;
+  display: flex;
+  height: 100%;
+}
+.container .parrafo2 .prueba {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: #f3f5fc;
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  height: 110%;
+  width: 50%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.container .parrafo2 .prueba .pruebados {
+  position: relative;
+  height: 100%;
+}
+.container .parrafo2 .prueba .pruebados #textoDesencriptado {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  resize: none;
+}
+.container .parrafo2 .prueba .pruebados #textoDesencriptado:focus {
+  border: 1px solid #1c3972;
+  outline: none;
+}
+.container .parrafo2 .prueba .pruebados .btnCopiar {
+  position: absolute;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 80%;
+  display: flex;
+  margin: auto;
+  padding: 5px 20px;
+  border: 1px solid #1c3972;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+  letter-spacing: 1px;
+  justify-content: center;
+  color: #1c3972;
+}
+
+@media (max-width: 750px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  body header {
+    height: 10vh;
+  }
+  body header .logo {
+    width: 15px;
+  }
+  body .container {
+    flex-direction: column;
+    height: 90vh;
+    flex-wrap: wrap;
+    display: flex;
+    position: relative;
+    width: 100vw;
+    padding: 0px;
+  }
+  body .container .parrafo1 {
+    width: 100%;
+    height: 40vh;
+  }
+  body .container .parrafo1 .prueba .alerta {
+    font-size: 8px;
+    margin-left: 20px;
+  }
+  body .container .parrafo1 .prueba .opciones {
+    font-size: 13px;
+  }
+  body .container .parrafo2 {
+    width: 100%;
+    position: relative;
+    display: flex;
+    height: 30vh;
+    margin: auto;
+  }
+  body .container .parrafo2 .prueba {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    height: 100%;
+    width: 85%;
+    box-sizing: border-box;
+  }
+  body .container .parrafo2 .prueba .pruebados #textoDesencriptado {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
